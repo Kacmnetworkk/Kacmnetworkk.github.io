@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#172038"/>
+      <stop offset="52%" stop-color="#070912"/>
+      <stop offset="100%" stop-color="#02030a"/>
+    </radialGradient>
+    <radialGradient id="coin" cx="36%" cy="25%" r="72%">
+      <stop offset="0%" stop-color="#fff6b8"/>
+      <stop offset="16%" stop-color="#ffd66d"/>
+      <stop offset="46%" stop-color="#c8841c"/>
+      <stop offset="72%" stop-color="#72420e"/>
+      <stop offset="100%" stop-color="#231306"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="180" y1="140" x2="845" y2="870" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff4a7"/>
+      <stop offset="30%" stop-color="#e2a82e"/>
+      <stop offset="62%" stop-color="#5f3508"/>
+      <stop offset="100%" stop-color="#ffdf82"/>
+    </linearGradient>
+    <linearGradient id="tealviolet" x1="240" y1="220" x2="806" y2="810" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7c3cff"/>
+      <stop offset="48%" stop-color="#12e5d3"/>
+      <stop offset="100%" stop-color="#9254ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="38" stdDeviation="38" flood-color="#000000" flood-opacity="0.72"/>
+    </filter>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.3"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="400" fill="#000" opacity="0.34" filter="url(#soft)"/>
+
+  <g opacity="0.52" filter="url(#glow)">
+    <path d="M151 692 C298 549 303 405 454 328 C599 254 746 286 878 174" fill="none" stroke="#7c3cff" stroke-width="4"/>
+    <path d="M153 742 C326 613 353 471 514 405 C658 345 755 368 903 285" fill="none" stroke="#12e5d3" stroke-width="3"/>
+    <path d="M120 358 C292 466 427 326 563 285 C696 244 789 184 920 105" fill="none" stroke="#9b5cff" stroke-width="2.5"/>
+  </g>
+
+  <g transform="rotate(-8 512 512)" filter="url(#shadow)">
+    <circle cx="512" cy="512" r="332" fill="url(#rim)"/>
+    <circle cx="512" cy="512" r="296" fill="#120a04" opacity="0.95"/>
+    <circle cx="512" cy="512" r="279" fill="url(#coin)"/>
+    <circle cx="512" cy="512" r="238" fill="none" stroke="#fff0a5" stroke-width="8" opacity="0.44"/>
+    <circle cx="512" cy="512" r="210" fill="#06070d" opacity="0.28"/>
+
+    <g opacity="0.55">
+      <circle cx="512" cy="512" r="315" fill="none" stroke="#fff2a3" stroke-width="4" stroke-dasharray="12 22"/>
+      <circle cx="512" cy="512" r="268" fill="none" stroke="#351b08" stroke-width="3" stroke-dasharray="8 15"/>
+    </g>
+
+    <g filter="url(#glow)">
+      <path d="M334 573 L512 257 L690 573 H612 L512 392 L412 573 Z" fill="url(#tealviolet)" opacity="0.94"/>
+      <path d="M416 608 H608 L646 684 H378 Z" fill="url(#tealviolet)" opacity="0.88"/>
+      <path d="M512 397 L572 573 H452 Z" fill="#06070d" opacity="0.72"/>
+    </g>
+
+    <text x="512" y="748" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="9" fill="#fff1a6" opacity="0.92">RAVFIA</text>
+    <text x="512" y="812" text-anchor="middle" font-family="DejaVu Sans Mono, monospace" font-size="24" font-weight="700" letter-spacing="7" fill="#13ead8" opacity="0.78">COIN</text>
+
+    <ellipse cx="392" cy="302" rx="172" ry="48" transform="rotate(-28 392 302)" fill="#fff7bd" opacity="0.22"/>
+    <path d="M242 482 C302 324 421 244 579 224" fill="none" stroke="#fff8bf" stroke-width="7" opacity="0.24" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.8" filter="url(#glow)">
+    <circle cx="215" cy="222" r="3" fill="#12e5d3"/>
+    <circle cx="826" cy="706" r="4" fill="#9254ff"/>
+    <circle cx="822" cy="257" r="2.5" fill="#fff3a4"/>
+    <circle cx="188" cy="765" r="2" fill="#fff3a4"/>
+  </g>
+</svg>
